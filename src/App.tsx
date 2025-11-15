@@ -11,6 +11,7 @@ function App() {
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
+          <span>씨발 지영사마 개새끼 별걸 가지고 트집이네</span>
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
