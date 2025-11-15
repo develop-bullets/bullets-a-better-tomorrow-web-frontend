@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useCookies } from '@/utils/cookies';
 import './ui.scss'
 
@@ -15,6 +16,12 @@ const RouteHome = () => {
         <dl>
           <dt>AppVer:</dt>
           <dd>{getCookie('appVer') ?? 'undefined'}</dd>
+        </dl>
+        <dl>
+          <dt>ExternalLink:</dt>
+          <dd>
+            <Link to={'https://google.com'}>Google</Link>
+          </dd>
         </dl>
       </div>
     </>
