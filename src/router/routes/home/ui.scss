@@ -35,6 +35,21 @@
 
 .card {
   padding: 2em;
+
+  dl {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    dt {
+      width: 10em;
+      text-align: left;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
 }
 
 .read-the-docs {
