@@ -1,1 +1,1 @@
-export { RoutePageAUI } from './ui'
+export { RoutePageA } from './ui'

@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { RouteHome } from './routes/home';
-import { RoutePageAUI } from './routes/page-a';
+import { RoutePageA } from './routes/page-a';
+import { RoutePageB } from './routes/page-b';
+import { RouteCallbackFCM } from './routes/callback-fcm';
 import { TabBar } from "@/components/tab-bar";
 import {type CSSProperties, useEffect, useMemo, useRef, useState} from "react";
 
@@ -19,10 +21,9 @@ export const Router = () => {
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path={'/'} element={<RouteHome style={bottomPadding} />} />
-        <Route path={'/page-a'} element={<RoutePageAUI style={bottomPadding} />} />
-        <Route path={'/page-b'} element={'Page B'} />
-        <Route path={'/page-c'} element={'Page C'} />
-        <Route path={'/page-d'} element={'Page D'} />
+        <Route path={'/page-a'} element={<RoutePageA style={bottomPadding} />} />
+        <Route path={'/page-b'} element={<RoutePageB style={bottomPadding} />} />
+        <Route path={'/callback/fcm'} element={<RouteCallbackFCM style={bottomPadding} />} />
       </Routes>
       <TabBar ref={tabBarRef} />
     </BrowserRouter>

@@ -23,9 +23,9 @@ export const TabBar = ({ ref }: TabBarProps) => {
           <span className={clsx(styles.icon)} />
           <span className={clsx(styles.label)}>Page B</span>
         </Link>
-        <Link to={'/page-c'} className={clsx(styles.tab)}>
+        <Link to={'/callback/fcm?data=%7B%0A%20%20%20%20"route"%3A%20"%2Fpromotions%2F123"%2C%0A%20%20%20%20"couponId"%3A%20"SUMMER2024"%2C%0A%20%20%20%20"custom_key"%3A%20"custom_value"%0A%20%20%7D'} className={clsx(styles.tab)}>
           <span className={clsx(styles.icon)} />
-          <span className={clsx(styles.label)}>Page C</span>
+          <span className={clsx(styles.label)}>Callback FCM</span>
         </Link>
       </div>
     </div>
