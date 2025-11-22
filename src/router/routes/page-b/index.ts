@@ -1,0 +1,1 @@
+export { RoutePageB } from './ui'
