@@ -1,9 +1,12 @@
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useCookies } from '@/utils/cookies';
+import type { BaseCompProps } from '@/types';
 import './ui.scss'
-import {useRef} from "react";
 
-const RouteHome = () => {
+type RouteHomeProps = BaseCompProps
+
+export const RouteHome = ({ style }: RouteHomeProps) => {
   const { getCookie } = useCookies()
   const cameraRef = useRef<HTMLInputElement>(null)
   const photoRef = useRef<HTMLInputElement>(null)
@@ -19,7 +22,7 @@ const RouteHome = () => {
   return (
     <>
       <h1>Native Info</h1>
-      <div className="card">
+      <div className="card" style={style}>
         <dl>
           <dt>AppType:</dt>
           <dd>{getCookie('appType') ?? 'undefined'}</dd>
@@ -52,5 +55,3 @@ const RouteHome = () => {
     </>
   )
 }
-
-export default RouteHome

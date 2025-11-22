@@ -1,3 +1,1 @@
-import RouteHome from './ui.tsx';
-
-export default RouteHome
+export { RouteHome } from './ui';

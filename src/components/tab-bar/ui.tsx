@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom'
 import clsx from 'clsx';
 import styles from './ui.module.scss'
+import type {RefObject} from "react";
 
-export const TabBar = () => {
+interface TabBarProps {
+  ref: RefObject<HTMLDivElement | null>
+}
+
+export const TabBar = ({ ref }: TabBarProps) => {
   return (
-    <div className={clsx(styles.tabBar)}>
+    <div ref={ref} className={clsx(styles.tabBar)}>
       <div className={clsx(styles.inner)}>
         <Link to={'/'} className={clsx(styles.tab)}>
           <span className={clsx(styles.icon)} />
