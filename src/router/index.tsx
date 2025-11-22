@@ -4,7 +4,7 @@ import { TabBar } from "@/components/tab-bar";
 
 export const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path={'/'} element={<RouteHome />} />
         <Route path={'/page-a'} element={'Page A'} />
