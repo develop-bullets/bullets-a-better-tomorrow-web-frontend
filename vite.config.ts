@@ -11,7 +11,7 @@ export default defineConfig({
       }
     })
   ],
-  base: 'bullets-a-better-tomorrow-web-frontend/',
+  base: '/bullets-a-better-tomorrow-web-frontend/',
   resolve: {
     alias: {
       '@/public': path.resolve(__dirname, 'public'),
