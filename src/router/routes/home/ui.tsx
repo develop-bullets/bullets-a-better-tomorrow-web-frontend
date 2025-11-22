@@ -24,12 +24,16 @@ export const RouteHome = ({ style }: RouteHomeProps) => {
       <h1>Native Info</h1>
       <div className="card" style={style}>
         <dl>
-          <dt>AppType:</dt>
+          <dt>appType:</dt>
           <dd>{getCookie('appType') ?? 'undefined'}</dd>
         </dl>
         <dl>
-          <dt>AppVer:</dt>
+          <dt>appVer:</dt>
           <dd>{getCookie('appVer') ?? 'undefined'}</dd>
+        </dl>
+        <dl>
+          <dt>fcmToken:</dt>
+          <dd>{getCookie('fcmToken') ?? 'undefined'}</dd>
         </dl>
         <dl>
           <dt>ExternalLink:</dt>
