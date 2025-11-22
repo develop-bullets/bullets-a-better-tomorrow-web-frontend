@@ -51,6 +51,23 @@ export const RouteHome = ({ style }: RouteHomeProps) => {
             <button onClick={handleOnOpenPhoto}>Open Photo</button>
           </dd>
         </dl>
+        <dl>
+          <dt>Video:</dt>
+          <dd>
+            <video
+              controls
+              width="100%"
+              poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+              playsInline
+            >
+              <source
+                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </dd>
+        </dl>
       </div>
     </>
   )
