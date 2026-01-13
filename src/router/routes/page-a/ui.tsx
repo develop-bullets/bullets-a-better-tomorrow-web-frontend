@@ -11,6 +11,10 @@ export const RoutePageA = ({ classes, style }: RoutePageAProps) => {
   return (
     <div className={clsx(styles.pageA, classes)} style={{ ...style, backgroundColor: 'rgba(255, 0, 0, 0.03)' }}>
       <span>Page A: {pathname}</span>
+
+      <form>
+        <input type="text" placeholder={'키보드 테스트'} />
+      </form>
     </div>
   )
 }
